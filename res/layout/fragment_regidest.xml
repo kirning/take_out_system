@@ -1,0 +1,79 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    tools:context="com.kirno.take_out_system.view.LoginjActivity$PlaceholderFragment" >
+
+    <!-- 用户名 -->
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/regidest_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/login_username"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:inputType="text" />
+    </TableRow>
+    <!-- 密码 -->
+
+    <TableRow android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/login_password"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/regidest_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:inputType="textPassword" />
+    </TableRow>
+    <!-- 再次输入密码 -->
+
+    <TableRow android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/password_again"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/regidest_password_again"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:inputType="textPassword" />
+    </TableRow>
+    <!-- 登陆 -->
+
+    <TableRow android:layout_marginTop="20dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/regidst" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,81 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="50dp"
+    tools:context="com.kirno.take_out_system.view.LoginjActivity$PlaceholderFragment" >
+
+    <!-- 用户名 -->
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/login_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/login_username"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:inputType="text" />
+    </TableRow>
+    <!-- 密码 -->
+
+    <TableRow android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/login_password"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:inputType="text" />
+    </TableRow>
+    <!-- 登陆 -->
+
+    <TableRow android:layout_marginTop="20dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_login"
+            android:layout_weight="1" />
+    </TableRow>
+    <!-- 忘记密码&注册 -->
+
+    <TableRow android:layout_marginTop="20dp" >
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/login_forget_password"
+            android:textColor="#69f" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/login_login"
+            android:textColor="#69f" />
+    </TableRow>
+
+</TableLayout>
