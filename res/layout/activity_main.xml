@@ -1,8 +1,22 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kirno.take_out_system.view.MainActivity"
-    tools:ignore="MergeRootFrame" />
+    tools:context="com.kirno.take_out_system.view.ActivityMain"
+    tools:ignore="MergeRootFrame" >
 
+    <!-- 底部按钮 -->
+
+    <include
+        android:id="@+id/main_bootom_button"
+        layout="@layout/bottom_button" />
+    <!-- 主页面 -->
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bootom_button" 
+        />
+
+</RelativeLayout>

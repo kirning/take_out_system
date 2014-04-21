@@ -9,12 +9,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-        <ExpandableListView
-            android:id="@+id/sreach_class"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content" 
-            android:entries="@array/sreach_class">
-        </ExpandableListView>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/sreach_class"
+            android:gravity="center" />
 
         <SearchView
             android:layout_width="wrap_content"
@@ -26,7 +25,7 @@
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1" >
     </ListView>
 

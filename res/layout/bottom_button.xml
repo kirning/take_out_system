@@ -5,9 +5,19 @@
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:orientation="horizontal" >
+    
 
     <ImageButton
-        android:id="@+id/btnDd"
+        android:id="@+id/btnHome"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/notImg"
+        android:src="@drawable/sc_home" />
+
+    <ImageButton
+        android:id="@+id/btnMarket"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

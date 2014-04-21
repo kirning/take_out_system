@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <!-- 这个是第一个 -->
+
     <LinearLayout
         android:id="@+id/my_top"
         android:layout_width="match_parent"
@@ -35,16 +37,14 @@
                 android:text="@string/shop" />
         </LinearLayout>
     </LinearLayout>
-
-    <include
-        android:id="@+id/my_bottom_button"
-        layout="@layout/bottom_button" />
+    <!-- 这个是其他列表 -->
 
     <ListView
         android:id="@+id/my_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/my_bottom_button"
-        android:layout_below="@id/my_top" />
+        android:layout_height="match_parent"
+        
+        android:layout_below="@id/my_top"
+        android:entries="@array/list_my" />
 
 </RelativeLayout>

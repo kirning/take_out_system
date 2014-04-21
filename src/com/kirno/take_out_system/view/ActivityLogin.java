@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class LoginjActivity extends Activity {
+public class ActivityLogin extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,7 @@ public class LoginjActivity extends Activity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_loginj,
+			View rootView = inflater.inflate(R.layout.fragment_login,
 					container, false);
 			return rootView;
 		}

@@ -14,20 +14,20 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.kirno.take_out_system.R;
-import com.kirno.take_out_system.dto.InfData;
+import com.kirno.take_out_system.dto.DataInf;
 
 /**
  * 菜式详细界面
  * @author qq303_000
  *
  */
-public class CaiInfActivity extends Activity {
+public class ActivityCaiInf extends Activity {
 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.caiinf);
+		setContentView(R.layout.activity_caiinf);
 
 		if (savedInstanceState == null) {
 			getFragmentManager().beginTransaction()
@@ -78,10 +78,10 @@ public class CaiInfActivity extends Activity {
 		/**
 		 * 详细界面显示的数据
 		 */
-		private InfData infData;
+		private DataInf infData;
 
 		public PlaceholderFragment() {
-			infData = InfData.getInstance();
+			infData = DataInf.getInstance();
 		}
 
 		@Override

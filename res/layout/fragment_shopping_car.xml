@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:text="@string/moneyIco"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/list_car_order_sum"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/order_def_num"
+            android:textColor="#f30"
+            android:textSize="45sp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/car_put" />
+    </LinearLayout>
+
+</LinearLayout>

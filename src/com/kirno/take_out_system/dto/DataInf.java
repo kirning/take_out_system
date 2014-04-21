@@ -7,20 +7,20 @@ import android.graphics.Bitmap;
  * @author qq303_000
  *
  */
-public class InfData {
+public class DataInf {
 	private Bitmap img;
 	private String infCai;
 	private String infShop;
 	private int price;
 	private String[] talk;
 	
-	private static InfData instance;
+	private static DataInf instance;
 	
-	private InfData(){}
+	private DataInf(){}
 	
-	public static InfData getInstance(){
+	public static DataInf getInstance(){
 		if(instance == null){
-			instance = new InfData();
+			instance = new DataInf();
 		}
 		return instance;
 	}
@@ -57,8 +57,8 @@ public class InfData {
 		this.price = price;
 	}
 
-	public static void setInstance(InfData instance) {
-		InfData.instance = instance;
+	public static void setInstance(DataInf instance) {
+		DataInf.instance = instance;
 	}
 
 	public String[] getTalk() {

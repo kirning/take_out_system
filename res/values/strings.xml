@@ -18,10 +18,23 @@
     <string name="shop">店铺</string>
     <string name="paixu">排序</string>
     <string name="sreach">搜索</string>
+    <string name="order_name">名字</string>
+    <string name="order_price">单价</string>
+    <string name="order_num">数量</string>
+    <string name="order_sum">总价</string>
+    <string name="order_def_num">1</string>
+    <string name="car_put">提交</string>
 
     <string-array name="sreach_class">
         <item>菜式</item>
         <item>店铺</item>
+    </string-array>
+    <string-array name="list_my">
+        <item>全部订单</item>
+        <item>个人信息</item>
+        <item>联系我们</item>
+        <item>版本信息</item>
+        <item>检查更新</item>
     </string-array>
 
 </resources>

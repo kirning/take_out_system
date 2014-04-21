@@ -42,17 +42,12 @@
             android:background="#fff"
             android:text="@string/paixu" />
     </LinearLayout>
-    <!-- 底部按钮 -->
 
-    <include
-        android:id="@+id/bottom_mune"
-        layout="@layout/bottom_button" />
 
     <ListView
         android:id="@+id/cards"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/bottom_mune"
+        android:layout_height="match_parent"
         android:layout_below="@id/top"
         android:divider="#ddd"
         android:dividerHeight="5dp"
